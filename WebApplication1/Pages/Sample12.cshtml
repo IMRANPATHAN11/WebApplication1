@@ -1,0 +1,30 @@
+﻿@page
+@model WebApplication1.Pages.Sample12Model
+@{
+}
+<div>
+    <p>@Model.message</p>
+    @using(Html.BeginForm())
+    {
+       <table align="center">
+           <tr>
+               <th>enter first number</th>
+               <td>@Html.TextBox("num1")</td>
+           </tr>
+           <tr>
+               <th>enter second number</th>
+               <td>@Html.TextBox("num2")</td>
+           </tr>
+           <tr>
+               <td> <input type="submit"value="ADD"name="operation"/></td>
+               <td> <input type="submit"value="SUBSTRACT"name="operation"/></td>
+           </tr>
+           <tr>
+               <td> <input type="submit"value="MULTIPLY"name="operation"/></td>
+               <td> <input type="submit"value="DIVIDE"name="operation"/></td>
+
+           </tr>
+             
+       </table>
+    }
+</div>
